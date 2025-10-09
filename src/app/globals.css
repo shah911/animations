@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+/* for AnimatedMenu */
+.burger {
+  position: relative;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border-color: black;
+  border-width: 1px;
+  background: black;
+  cursor: pointer;
+  display: block;
+}
+
+.burger input {
+  display: none;
+}
+
+.burger span {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: white;
+  border-radius: 4.5px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+}
+
+.burger:hover {
+  transition: 0.25s ease-in-out;
+  background: white;
+}
+
+.burger:hover span {
+  transition: 0.25s ease-in-out;
+  background: black;
+}
+
+.burger span:nth-of-type(1) {
+  width: 50%;
+  top: calc(40% - 1px);
+  left: 25%;
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(2) {
+  width: 25%;
+  left: 25%;
+  top: calc(60% - 1px);
+  transform-origin: left center;
+  transform: translateY(-100%);
+}
+
+.burger input:checked ~ span:nth-of-type(1) {
+  width: 50%;
+  transform: rotate(45deg);
+  top: 30%;
+  left: 31.5%;
+}
+
+.burger input:checked ~ span:nth-of-type(2) {
+  width: 50%;
+  transform: rotate(-45deg);
+  top: 65%;
+  left: 31.5%;
+}
+
+.underline-effect {
+  position: relative;
+  overflow: hidden;
+}
+
+.underline-effect::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: currentColor;
+  transition: width 0.3s ease;
+}
+
+.underline-effect:hover::after {
+  width: 100%;
+}
+
+@media screen and (min-width: 1280px) {
+  .burger {
+    height: 3vw;
+    width: 3vw;
+  }
+  .burger span {
+    height: 0.15vw;
+  }
+}
