@@ -6,10 +6,16 @@
 // import ModernImgSlider from "@/components/ModernImgSlider";
 // import Loading from "@/components/Loading";
 // import AnimatedMenu from "@/components/AnimatedMenu";
-import SideMenu from "@/components/SideMenu";
+// import SideMenu from "@/components/SideMenu";
+// import OpacityScrollAnimation from "@/components/OpacityScrollAnimation";
+// import CardStackAnimation from "@/components/CardStackAnimation";
+import ParallexAnimation from "@/components/ParallexAnimation";
 
 export default function Home() {
-  return <SideMenu />;
+  return <ParallexAnimation />;
+  // <CardStackAnimation />;
+  // <OpacityScrollAnimation />;
+  // <SideMenu />;
   // <AnimatedMenu />;
   // <ModernImgSlider />;
   // <MagneticHoverEffect />;
