@@ -1,5 +1,5 @@
-import SideMenu from "@/components/SideMenu";
+import ZoomParallex from "@/components/ZoomParallex";
 
 export default function Home() {
-  return <SideMenu />;
+  return <ZoomParallex />;
 }
