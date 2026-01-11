@@ -136,7 +136,17 @@ function SeqScroll() {
               </div>
             ))}
           </div>
-
+          {data.map((item, i) => (
+            <div key={i} className="absolute top-0 left-0 h-full w-full hidden">
+              <Image
+                priority
+                src={item.url}
+                alt={item.title}
+                fill
+                className="object-cover"
+              />
+            </div>
+          ))}
           <AnimatePresence mode="sync">
             {data.map(
               (item, i) =>
