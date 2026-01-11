@@ -1,5 +1,5 @@
-import ZoomParallex from "@/components/ZoomParallex";
+import SeqScroll from "@/components/SeqScroll";
 
 export default function Home() {
-  return <ZoomParallex />;
+  return <SeqScroll />;
 }
