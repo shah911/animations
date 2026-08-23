@@ -1,5 +1,5 @@
-import SeqScroll from "@/components/SeqScroll";
+import OnScrollVideoPlay from "@/components/OnScrollVideoPlay";
 
 export default function Home() {
-  return <SeqScroll />;
+  return <OnScrollVideoPlay />;
 }

@@ -89,7 +89,7 @@ function SeqScroll() {
   const clipPath = useTransform(
     scrollYProgress,
     [0, 1],
-    ["inset(0 0 100% 0)", "inset(0 0 0% 0)"]
+    ["inset(0 0 100% 0)", "inset(0 0 0% 0)"],
   );
 
   useEffect(() => {
@@ -176,7 +176,7 @@ function SeqScroll() {
                               {char}
                             </motion.span>
                           </span>
-                        )
+                        ),
                       )}
                     </h1>
                     <Image
@@ -186,7 +186,7 @@ function SeqScroll() {
                       className="object-cover"
                     />
                   </motion.div>
-                )
+                ),
             )}
           </AnimatePresence>
         </div>
