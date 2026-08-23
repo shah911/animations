@@ -23,6 +23,7 @@ function OnScrollVideoPlay() {
 
   const count = useTransform(scrollYProgress, [0, 1], [1, 240]);
 
+  //To round off the count
   useMotionValueEvent(count, "change", (value) => {
     setFrame(Math.round(value).toString().padStart(3, "0"));
   });
