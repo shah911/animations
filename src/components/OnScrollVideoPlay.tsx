@@ -40,6 +40,7 @@ function OnScrollVideoPlay() {
               src={item}
               alt={item}
               priority={true}
+              sizes="100vw"
               fill
               className="object-cover"
             />
