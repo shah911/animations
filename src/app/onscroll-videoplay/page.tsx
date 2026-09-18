@@ -1,5 +1,7 @@
 import OnScrollVideoPlay from "@/components/OnScrollVideoPlay";
 
-export default function Home() {
+function OnScrollVideoPlayPage() {
   return <OnScrollVideoPlay />;
 }
+
+export default OnScrollVideoPlayPage;
