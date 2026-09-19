@@ -1,5 +1,7 @@
 import ThreeDCardAnimation from "@/components/ThreeDCardAnimation";
 
-export default function Home() {
+function ThreeDCardAnimationPage() {
   return <ThreeDCardAnimation />;
 }
+
+export default ThreeDCardAnimationPage;
