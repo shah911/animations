@@ -1,5 +1,5 @@
-import ThreeDCardAnimation from "@/components/ThreeDCardAnimation";
+import IntroAnimation from "../components/IntroAnimation";
 
 export default function Home() {
-  return <ThreeDCardAnimation />;
+  return <IntroAnimation />;
 }
